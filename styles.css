@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f8f8f4;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  color: #ffb36c;
+  font-weight: bold;
+}
+
+span {
+  color: #000;
+}
+
+p {
+  color: #71717a;
+  margin: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  max-width: 640px;
+  padding: 16px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #ffffff;
+  outline: none;
+  margin-top: 20px;
+}
+
+button {
+  width: 100%;
+  max-width: 640px;
+  background: rgb(255, 179, 108);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bloco-codigo {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  color: #000000;
+  line-height: 2;
+  overflow: auto;
+  width: 100%;
+  height: 450px;
+  white-space: pre-wrap;
+}
+
+.resultado-codigo {
+  width: 100%;
+  height: 450px;
+  min-height: 350px;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  background: #ffffff;
+  margin: 10px;
+}
+
+.resultado {
+  display: none;
+  width: 100%;
+  max-width: 640px;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.resultado > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.resultado.visivel {
+  display: flex;
+}
